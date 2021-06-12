@@ -8,16 +8,17 @@ h1 {
   font-family: 'Playfair Display';
   font-size:60px;
   line-height: 100%;
+
 }
 
 h2 {
   color: #F26531;
   font-family: 'Roboto';
-  line-height: 150%;
+  line-height: 100%;
 }
 
 p {
-  color: grey;
+  color: rgb(146, 145, 145);
   font-family: 'Roboto';
   line-height: 100%;
 }
@@ -30,6 +31,7 @@ a {
 
 a:hover {
   color: #F26531;
+  text-decoration: underline;
 }
 
 .img-circle {
@@ -45,6 +47,10 @@ a:hover {
   margin: 0 auto; /* This automatically sets left/right margins */
 }
 
+.div-hover:hover {
+  border-color: orange;
+}
+
 .list-inline > li {
   display: inline-block;
   padding: 0px 20px;
@@ -55,8 +61,9 @@ a:hover {
   padding-left: 0px;
 }
 .card {
-  padding: 30px;
-  margin: 20px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 16px;
 }
 
 .border {
@@ -64,10 +71,18 @@ a:hover {
 }
 
 .thick-border {
-  border: 6px dotted #F26531;
+  border: 3px solid #F26531;
 }
 
-@media (max-width: 960px) {
+.image-padd-bottom {
+  padding-bottom: 20px;
+}
+
+.image-padd-top {
+  padding-top: 20px;
+}
+
+@media (max-width: 2000px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
@@ -83,5 +98,8 @@ a:hover {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
+  }
+  .image-to-scale {
+    width: 150px;
   }
 }
